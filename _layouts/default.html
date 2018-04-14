@@ -2,14 +2,15 @@
 <html lang="pt">
     {% include head.html %}
     <body id="top">
-        {% include navbar.html %}
         {% include sidenav.html %}
         
         <main class="animate-bottom">
             {{ content }}
         </main>
 
-        {% include footer.html %}
+        {% if page.layout == "page" %}
+            {% include footer.html %}
+        {% endfor %}
 
         {% include scripts.html %}
     </body>

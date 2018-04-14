@@ -24,6 +24,14 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
 
+- label: "Slider"
+    name: "slider"
+    folder: "collections/_slider"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
   - label: "Serviços"
     name: "servicos"
     folder: "collections/_servicos"

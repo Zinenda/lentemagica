@@ -1,0 +1,9 @@
+<header class="slider fullscreen">
+    <ul class="slider">
+        {% for item in site.slider limit: 6 %}
+            <li>
+                <img src="{{ item.image }}" alt="{{ item.title }}">
+            </li>
+        {% endfor %}
+    </ul>
+</header>

@@ -1,0 +1,30 @@
+.primary-color {
+    background: $primary-color;
+}
+
+.primary-color-text {
+    color: $primary-color;
+}
+
+.primary-color-light {
+    background: $primary-color-light;
+}
+
+.primary-color-dark {
+    background: $primary-color-dark;
+}
+
+.waves-effect.waves-primary .waves-ripple {
+    background-color: rgba($color: $primary-color, $alpha: .65);
+}
+
+.page-header {
+    position: relative;
+    background-color: rgba($color: $primary-color, $alpha: .5);
+    .page-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

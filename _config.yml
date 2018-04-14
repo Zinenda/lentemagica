@@ -1,8 +1,8 @@
-title: AM Fermino
-email: info@amfermino.com
+title: Lente Mágica
+email: info@lentemagica.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Soluções Ambientais
-url: "http://amfermino.com" # the base hostname & protocol for your site, e.g. http://example.com
+  Capturando Momentos Mágicos
+url: "https://lentemagica.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
@@ -31,15 +31,17 @@ sass:
   sass_dir: assets/_sass
   style: compressed
 
-logo: /assets/img/logo.svg
-image: /assets/img/logotipo.svg
-color: "#49733d"
+logo: /assets/img/whitelogo.svg
+image: /assets/img/goldlogo.svg
+logotype: /assets/img/blacklogo.svg
+color: "#444"
 
 collections_dir: collections
 collections:
   sobre:
   servicos:
   portfolio:
+  slider:
 
 pagination:
   enabled: true
