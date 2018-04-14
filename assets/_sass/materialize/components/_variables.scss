@@ -1,12 +1,12 @@
 // 1. Colors
 // ==========================================================================
 
-$primary-color: #49733d !default;
+$primary-color: #444 !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: #7ABF66;
-$success-color: #294022 !default;
+$secondary-color: #908282;
+$success-color: #7ABF66 !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
 

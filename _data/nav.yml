@@ -10,10 +10,6 @@
   title: Serviços
   icon: briefcase
 
-- link: "#portfolio"
+- link: "/galeria"
   title: Portfólio
   icon: image
-
-- link: "#noticias"
-  title: Publicações
-  icon: newspaper

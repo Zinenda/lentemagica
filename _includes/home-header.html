@@ -5,12 +5,14 @@
         {% include social.html %}
         <h3>{{ item.description }}</h3>
         <br>
-        {% for item in site.data.nav %}
-            <ul class="inline-list">
-                <li>
-                    <a href="{{ item.link }}" class="btn-large waves-effect waves-light" title="{{ item.title }}">{{ item.title }}</a>
-                </li>
-            </ul>
-        {% endfor %}
+        <ul class="inline-list">
+            {% for item in site.data.nav %}
+                {% unless forloop.first %}
+                    <li>
+                        <a href="{{ item.link }}" class="btn-flat btn-large waves-effect waves-light" title="{{ item.title }}">{{ item.title }}</a>
+                    </li>
+                {% endunless %}
+            {% endfor %}
+        </ul>
     </div>
 </header>
