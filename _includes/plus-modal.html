@@ -1,0 +1,25 @@
+<div id="plus-modal" class="modal">
+    <div class="modal-content">
+        <div class="container center">
+            <img src="{{ site.image }}" alt="{{ site.title }}" style="width: 200px;">
+            <br>
+            {% include social.html %}
+            <h3>{{ item.description }}</h3>
+            <br>
+                {% for item in site.data.nav %}
+                    {% unless forloop.first %}
+                    <a href="{{ item.link }}" class="btn-flat btn-large waves-effect waves-light white-text" title="{{ item.title }}">{{ item.title }}</a>
+                    {% endunless %}
+                {% endfor %}
+        </div>
+    </div>
+</div>
+
+<style>
+    #plus-modal {
+        background-image: url(/assets/img/goldpattern.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+</style>
