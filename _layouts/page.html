@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<style>
+    .page-header {
+        position: relative;
+        height: 50vh;
+        background-image: url(/assets/img/goldpattern.svg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .page-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<header class="page-header">
+    <div class="page-content">
+        <div class="container center">
+            <img src="{{ site.logo }}" alt="{{ site.title }}" style="width: 200px;">
+            <br>
+            {% include social.html %} 
+
+            <h1>{{ page.title }}</h1>
+        </div>
+    </div>
+</header>
+
+<section class="section grey lighten-4">
+    <section id="masonry-grid" class="row">
+        {% for item in paginator.posts %}
+            <div class="col s6 l4 hoverable">
+                <a href="{{ item.image }}" data-title="{{ item.title }}" data-lightbox="{{ page.title }}">
+                    <img src="{{ item.image }}" alt="{{ item.title }}">
+                </a>
+            </div>
+        {% endfor %}
+    </section>
+</section>
+
+{% include pagination.html %}
