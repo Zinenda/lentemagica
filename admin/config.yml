@@ -23,13 +23,17 @@ collections:
         options: ["eye", "tasks", "handshake"]
       - {label: "Description", name: "description", widget: "text"}
 
-  - label: "Portfolio"
-    name: "portfolio"
-    folder: "collections/_portfolio"
+  - label: "Galeria"
+    name: "galeria"
+    folder: "collections/_galeria"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
+      - label: "Categorias"
+        name: "category"
+        widget: "select"
+        options: ["Casamentos", "Eventos", "Aniversários", "Estudio", "Vídeos"]
 
   - label: "Slider"
     name: "slider"
