@@ -2,14 +2,15 @@
   title: Home
   icon: home
 
-- link: "#sobre"
+- link: "#sobre-modal"
   title: Sobre
   icon: info
 
-- link: "#servicos"
+- link: "#servicos-modal"
   title: Serviços
-  icon: briefcase
+  icon: tasks
 
-- link: "/galeria"
-  title: Portfólio
-  icon: image
+- link: "#galeria-dropdown"
+  title: Galeria
+  icon: images
+  drowpdown: true

@@ -8,12 +8,22 @@
             <br>
                 {% for item in site.data.nav %}
                     {% unless forloop.first %}
-                    <a href="{{ item.link }}" class="btn-flat btn-large waves-effect waves-light white-text" title="{{ item.title }}">{{ item.title }}</a>
+                    <a href="{{ item.link }}" 
+                        class="btn-flat btn-large waves-effect waves-light white-text 
+                        {% unless item.dropdown %}modal-trigger{% endunless %}
+                        {% if item.dropdown %}dropdown-trigger{% endif %}" 
+                        title="{{ item.title }}"
+                        {% if item.dropdown %}data-target="galeria-dropdown"{% endif %}>
+                            <i class="fas fa-{{ item.icon }}"></i>
+                            {{ item.title }}
+                    </a>
                     {% endunless %}
                 {% endfor %}
         </div>
     </div>
 </div>
+
+{% include galeria-dropdown.html %}
 
 <style>
     #plus-modal {

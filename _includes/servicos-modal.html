@@ -1,0 +1,25 @@
+<div id="servicos-modal" class="modal">
+    <div class="modal-content">
+        <div class="container center">
+            <h4>
+                <i class="fas fa-tasks"></i>
+                <br>
+                Serviços
+            </h4>
+
+            <div class="row">
+                <div class="col s12 l4">
+                    {% for item in site.servicos %}
+                        <h5>
+                            <i class="fas fa-{{ item.icon }}"></i>
+                            <br>
+                            {{ item.title }}
+                        </h5>
+
+                        <p class="justify">{{ item.description }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div id="sobre-modal" class="modal">
+    <div class="moda-content">
+        <div class="container center">
+            <h4>
+                <i class="fas fa-info-circle"></i>
+                <br>
+                Sobre
+            </h4>
+
+            <div class="row">
+                <div class="col s12 l4">
+                    {% for item in site.sobre %}
+                        <h5>
+                            <i class="fas fa-{{ item.icon }}"></i>
+                            <br>
+                            {{ item.title }}
+                        </h5>
+
+                        <p class="justify">{{ item.description }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

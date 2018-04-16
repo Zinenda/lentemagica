@@ -13,8 +13,15 @@ collections:
     folder: "collections/_sobre"
     create: true
     fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Descrição", name: "description", widget: "text"}
+      - label: "Titulo"
+        name: "title"
+        widget: "select"
+        options: ["Missão", "Visão", "Valores"]
+      - label: "Icon"
+        name: "icon"
+        widget: "select"
+        options: ["eye", "tasks", "handshake"]
+      - {label: "Description", name: "description", widget: "text"}
 
   - label: "Portfolio"
     name: "portfolio"
@@ -41,5 +48,5 @@ collections:
       - label: "Icone"
         name: "icon"
         widget: "select"
-        options: ["recycle", "tree", "deskpro", "exclamation-circle", "leaf"]
+        options: ["trademark", "camera-retro", "video"]
       - {label: "Description", name: "description", widget: "text"}
