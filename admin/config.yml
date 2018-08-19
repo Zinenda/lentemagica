@@ -20,7 +20,7 @@ collections:
         name: "icon"
         widget: "select"
         options: ["eye", "tasks", "handshake"]
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Descrição", name: "body", widget: "markdown"}
 
   - label: "Galeria"
     name: "galeria"
@@ -52,4 +52,4 @@ collections:
         name: "icon"
         widget: "select"
         options: ["trademark", "camera-retro", "video"]
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Descrição", name: "body", widget: "markdown"}
