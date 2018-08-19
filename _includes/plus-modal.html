@@ -10,10 +10,8 @@
                     {% unless forloop.first %}
                     <a href="{{ item.link }}" 
                         class="btn-flat btn-large waves-effect waves-light white-text 
-                        {% unless item.dropdown %}modal-trigger{% endunless %}
-                        {% if item.dropdown %}dropdown-trigger{% endif %}" 
-                        title="{{ item.title }}"
-                        {% if item.dropdown %}data-target="galeria-dropdown"{% endif %}>
+                        {% unless item.dropdown %}modal-trigger{% endunless %}" 
+                        title="{{ item.title }}">
                             <i class="fas fa-{{ item.icon }}"></i>
                             {{ item.title }}
                     </a>
@@ -23,13 +21,10 @@
     </div>
 </div>
 
-{% include galeria-dropdown.html %}
-
 <style>
     #plus-modal {
         background-image: url(/assets/img/goldpattern.svg);
         background-size: cover;
         background-repeat: no-repeat;
     }
-
 </style>
