@@ -40,7 +40,7 @@ collections_dir: collections
 collections:
   sobre:
   servicos:
-  portfolio:
+  galeria:
   slider:
 
 pagination:
