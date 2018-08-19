@@ -1,6 +1,6 @@
 <header class="slider fullscreen">
     <ul class="slides">
-        {% for item in site.slider limit: 6 %}
+        {% for item in site.slider reversed limit: 6 %}
             <li>
                 <img src="{{ item.image }}" alt="{{ item.title }}">
             </li>
