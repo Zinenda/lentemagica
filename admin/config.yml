@@ -31,7 +31,7 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
       - label: "Categorias"
-        name: "category"
+        name: "tag"
         widget: "select"
         options: ["Casamentos", "Eventos", "Aniversários", "Estudio", "Vídeos"]
 
